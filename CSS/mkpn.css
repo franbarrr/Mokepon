@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap');
+
+body{
+    font-family: 'Londrina Solid', cursive;
+    background-color: #00425A;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}   
+
+.titulo{
+    color: white;
+    font-size: 100px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+
+#Seleccionar-Mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo{
+    color: white;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap: 10px;
+
+}
+
+ .tarjeta-de-mokepon {
+    font-family: 'Londrina Solid', cursive;
+    font-size: 25px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 360px;
+    background: #10A19D;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 5px; 
+    border: 3px solid white;
+ }
+
+
+ .tarjeta-de-mokepon img{
+    width: 240px
+ }
+
+ #boton-mascota{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background: #10A19D;
+    margin-top: 5px;
+    color: white;
+    font-family: 'Londrina Solid', cursive;
+    border: 3px solid white;
+ }
+
+ input {
+    display: none;
+ }
+
+ input:checked + label{
+    background-color: #222222;
+
+ }
+
+ #Seleccionar-Ataque {
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .boton-de-ataque {
+    background-color: #10A19D;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: white;
+    width: 100px;
+    font-family: 'Londrina Solid', cursive;
+    color: white;
+ }
+
+ #Mensajes {
+    width: 200px;
+    background: #10A19D;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 20px;
+    border-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:  white;
+ }
+
+ #boton-reiniciar{
+    border-radius: 20px;
+    border-color: white;
+    color: white;
+    background: #10A19D;
+    font-family: 'Londrina Solid', cursive;  
+ }
+
+ .batalla {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    color: white;
+    background: #10A19D;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-family: 'Londrina Solid', cursive;
+ }
+
+ .item-a, .item-b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ #ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+#ver-mapa button{
+   height: 40px;
+   width: 150px;
+   border-radius: 20px;
+   background: #10A19D;
+   margin: 10px 0px;
+   color: white;
+   font-family: 'Londrina Solid', cursive;
+   border: 3px solid white;
+}
+ @media (max-width : 560px){
+    .tarjetas, .tarjetas-ataques {
+        flex-direction: column;
+    }
+ }
+
+ @media (max-width : 300px){
+   #ver-mapa div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+   }
+}

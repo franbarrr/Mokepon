@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html> 
+
+<head>
+    <meta charset="utf-8">
+    <title>MOKEPON!</title>
+    <link rel="stylesheet" href="./CSS/mkpn.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+   
+    <section id="Seleccionar-Mascota">
+        <h1 class="titulo"> MOKEPÓN</h1>
+        <h2 class="subtitulo">Elige tu Mascota:</h2>
+
+        <div id="contenedorTarjetas" class="tarjetas"> 
+
+        </div>
+    
+        <button id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <section id="ver-mapa">
+        <h2 class="subtitulo">Recorre el mapa con tu Mokepon </h2>
+        <canvas id="mapa"></canvas>
+        <button onmouseup="detenerMovimiento()" onmousedown="moverArriba()">Arriba</button>
+       <div>
+          <button onmouseup="detenerMovimiento()" onmousedown="moverAbajo()">Abajo</button>
+          <button onmouseup="detenerMovimiento()" onmousedown="moverDerecha()">Derecha</button>
+          <button onmouseup="detenerMovimiento()" onmousedown="moverIzquierda()">Izquierda</button>
+       </div>
+    </section>
+
+    <section id="Seleccionar-Ataque">
+        <h1 class="titulo"> Combate MOKEPÓN! </h1>
+
+        <h2 class="subtitulo">Elige tu Ataque: </h2>
+
+        <div id="contenedorAtaques" class="tarjetas-ataques">
+          
+        </div>
+
+        <div>
+            <section id="Mensajes">
+                <div id="resultado">Mucha Suerte</div>
+                
+                <section id="Reiniciar"> 
+                    <button id="boton-reiniciar">Reiniciar</button>
+                </section>
+            </section>
+            
+        </div>
+
+        <div class="batalla">
+            <div class="item-a">
+                <p id="vidas-jugador">0</p>
+                <p id="mascota-jugador"> </p>
+                <div id="ataque-del-jugador"></div>
+            </div>
+
+            <div class="item-b">
+                <p id="vidas-enemigo">0</p>
+                <p id="mascota-enemigo"></p>
+                <div id="ataque-del-enemigo"></div>
+            </div>
+           
+        </div>
+    </section>
+    <script src="./js/mkpn.js"> </script>
+</body>
+</html>  
